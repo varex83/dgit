@@ -1,0 +1,16 @@
+[package]
+name = "dgit"
+version = "0.1.0"
+authors = ["Bohdan Ohorodnii <limposfeed@gmail.co>"]
+edition = "2021"
+
+[dependencies]
+reqwest = { version = "0.11.13", features = ["json", "blocking"] }
+bytes = "1.3.0"
+tokio = { version = "1.23.0", features = ["full"] }
+clap = { version = "4.0.32", features = ["derive"] }
+flate2 = "1.0"
+sha1 = "0.10.1"
+hex = "0.4.3"
+anyhow = "1.0.59"
+thiserror = "1.0.32"
